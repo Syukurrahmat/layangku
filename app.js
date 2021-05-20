@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(express.json());
 app.use(session({
     secret: '1234',
-    resave: true,
+    resave: false,
     saveUninitialized: true
 }));
 app.use(flash());
