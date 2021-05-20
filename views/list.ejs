@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/liststyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/"><h2>SERAT</h2></a>
+            <div class="menu" data-menu=0 tabindex="-1">
+                <img src="img/overflow-menu-horizontal.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="flex-between">
+                <div class="title">
+                    <img src="img/mail-unread-outline.svg" alt="">
+                    <div>
+                        <h3 >PESAN UNTUKMU</h3>
+                        <p><%= data.length %> pesan ditemukan</p>
+                    </div>
+                </div>
+                <p># <%= receiver %> </p>
+            </div>
+            <article>
+                <% if(data.length != 0 ){ %> 
+                    <% data.forEach((el) => { %>
+                        <section data-id=<%= el.id %>>
+                            <div class="atas">
+                                <b><%= el.title %></b>
+                                <img src="img/android-open.svg" data-cl='expand' alt="">
+                            </div>
+                            <div class="bawah">
+                                <p><%= el.message %> </p>
+                            </div>
+                        </section>
+                    <%  }); %>
+                <% }else{ %> 
+                    <div class="empty">
+                        <img src="img/Group 10.svg" alt="">
+                        <h3>Pesan untukmu tidak ditemukan </h3>
+                    </div>
+                <% } %> 
+            </article>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+    <script src="script/listscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reviewstyle.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/"><h2>SERAT</h2></a>
+            <div class="menu" data-menu=0 tabindex="-1">
+                <img src="img/overflow-menu-horizontal.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+           <article class="flex-between">
+               <section>
+                   <div class="atas">
+                       <b><%= title %></b>
+                   </div>
+                   <div class="bawah">
+                       <p><%= message %></p>
+                   </div>
+               </section>
+               <aside>
+                    <img src="img/checked.svg" alt="">
+                    <h3>PESAN ANDA TELAH BERHASIL KAMI TERIMA</h3>
+                    <div class="flex">
+                        <a href="/send" class="button-soft">Buat pesan lagi</a>
+                        <a href="/" class="button">Beranda</a>
+                    </div>
+               </aside>
+           </article>
+        </div>
+
+
+
+    </main>
+    <script src="script/script.js"></script>
+    <script src="script/reviewscript.js"></script>
+</body>
+</html>

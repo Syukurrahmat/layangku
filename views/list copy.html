@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/liststyle.css">
+    <title>Document</title>
+    <style>
+        .coba{
+            height: 200px;
+            border: 1px solid saddlebrown;
+            transition: max-height 2s;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2>SERAT</h2>
+            <div class="menu" data-menu=0>
+                <img src="img/overflow-menu-horizontal.svg" alt="">
+
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+          <div class="coba">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sunt tempora, eum unde quis officiis blanditiis asperiores totam vitae esse!
+            </p>
+        </div>
+        </div>
+    </main>
+<script src="script/script.js"></script>
+<script>
+    let coba = document.querySelector('.coba')
+    let pp = document.querySelector('.coba p')
+    document.querySelector('.menu').addEventListener('click',(e)=>{
+        let divmenu = e.target.closest('.menu')
+        if(divmenu.getAttribute('data-menu')=='0'){
+            let menu = document.createElement('div')
+            menu.classList.add('menubox')
+            menu.innerHTML = `<a href="/">Beranda</a>
+                        <a href="/send">Buat Pesan</a>
+                        <a href="/about">About</a>`
+            divmenu.appendChild(menu)
+            divmenu.setAttribute('data-menu',1)
+            setTimeout(()=>{
+                    document.addEventListener('click', closemenu)
+            })
+        }else{
+            closemenu() 
+        }
+        function closemenu(){
+            let menu = document.querySelector('.menubox')
+            menu.animate([
+                {},
+                {
+                    opacity: '0',
+                    transform: 'translate(30% , -30%) scale(0.8)'
+                }
+                ], {
+                    easing: 'ease-in-out',
+                duration: 300,
+                iterations: 1
+            })
+            divmenu.setAttribute('data-menu',0)
+            setTimeout(()=>{
+                menu.remove()
+                document.removeEventListener('click', closemenu)
+            },299)
+        }
+    })
+
+
+</script>
+</body>
+</html>
