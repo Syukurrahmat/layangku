@@ -1,13 +1,11 @@
-# <img src="https://user-images.githubusercontent.com/56708199/216625493-91e51a80-68ea-4dc9-884b-bf11146166e8.png"  width="240px">
+# <img src="https://user-images.githubusercontent.com/56708199/216625493-91e51a80-68ea-4dc9-884b-bf11146166e8.png" width="220">
 
-> Temukan Pesan Untukmu Dari banyak Orang
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
 
-<img src="https://user-images.githubusercontent.com/56708199/216626909-82238320-1dc6-455c-bcc8-925e9504f163.png" width="600px" />
-
-[Website Layangku](https://layangku.herokuapp.com/)
-
-Website ini merupakan website yang dapat menemukan pesan untukmu dari orang banyak hanya dengan menuliskan namamu saja. Kamu juga dapat menuliskan pesan untuk seseorang dengan menentukan nama penerima dan isi pesan. 
-Dengan kata lain website ini digunakan untuk menemukan dan mengirim pesan berdasarkan nama penerima, jadi bukan benar benar untuk kamu hehe.
+Layangku merupakan website yang dapat menemukan pesan untukmu dari orang banyak hanya dengan menuliskan namamu saja. Kamu juga dapat menuliskan pesan untuk seseorang dengan menentukan nama penerima dan isi pesan.
+> Website menemukan pesan berdasarkan nama penerima, jadi bukan benar benar untuk kamu saja hehe.
 
 # 👩🏾‍💻 Teknologi yang digunakan
 
