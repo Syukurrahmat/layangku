@@ -1,11 +1,12 @@
-import { useDisclosure, Button, Container, Divider, Grid, GridItem, Center } from "@chakra-ui/react"
-import { useRef } from "react"
-import { useEffect, useState } from "react"
+import { useDisclosure, Button, Container, Divider, Center, SimpleGrid, Text, Image } from "@chakra-ui/react"
+import { useRef, useEffect, useState } from "react"
 import { useParams } from "react-router"
 import { Data } from "../../services/data"
 import CardSlider from '../cardSlider'
 import HeadingWithIcon from "../headingWithIcon"
 import SmallMessageCard from "../messageCard/smallMessageCard"
+
+import noMessagesImage from '../../image/no-messages.png'
 
 type MessageListData = {
     receiver: string,
@@ -55,7 +56,7 @@ export default function MessageList() {
     useEffect(() => {
         ref.current?.scrollIntoView({ behavior: "smooth" })
         appendMessagesList(1, true)
-        
+
     }, [receiver])
 
 
@@ -71,20 +72,31 @@ export default function MessageList() {
             <HeadingWithIcon
                 icon='📫'
                 title={`Pesan untukmu "${receiver}"`}
-                subtitle={totalCount ? `${totalCount} Pesan untukmu ditemukan` : 'Mencari pesan untukmu'}
+                subtitle={!isLoaded ?
+                    'Mencari pesan untukmu' :
+                    totalCount ?
+                        `${totalCount} Pesan untukmu ditemukan` :
+                        'Belum ada pesan untukmu'
+                }
             />
             <Divider my='6' />
+            {Boolean(messagesList.length) ?
+                <SimpleGrid gap='4' pb='10' minChildWidth='250px'>
+                    {messagesList.map((data, i) => (
+                        <SmallMessageCard
+                            key={i}
+                            data={data}
+                            onClick={() => openCardSlider(i)}
+                        />
+                    ))}
+                </SimpleGrid>
+                :
+                <Center flexDirection='column' pt='12'>
+                    <Image src={noMessagesImage} alt='pesan kosong' w='150px' />
+                    <Text mt='4' fontSize='xl' textAlign='center' fontWeight='medium'>Yahh, Belum ada pesan untukmu</Text>
+                </Center>
+            }
 
-            <Grid gap='4' pb='10' templateColumns='repeat(auto-fill, minmax(250px, 1fr))'>
-                {messagesList.map((data, i) => (
-                    <SmallMessageCard
-                        as={GridItem}
-                        data={data}
-                        key={i}
-                        onClick={() => openCardSlider(i)}
-                    />
-                ))}
-            </Grid>
             {isLoaded && isNotYetAllData &&
                 <Center >
                     <Button

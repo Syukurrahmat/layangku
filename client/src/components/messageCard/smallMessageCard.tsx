@@ -6,7 +6,7 @@ interface ISmallMessageCard extends CardProps  {
     data : Message | MessageForm
 }
 
-export default function SmallMessageCard({ data , ...props } : ISmallMessageCard) {
+export default function SmallMessageCard({ data  } : ISmallMessageCard) {
     if (!data) return <SmallMessageCardSkeleton/>
 
     const { title, message, emoji, color } = data || {}
@@ -18,7 +18,7 @@ export default function SmallMessageCard({ data , ...props } : ISmallMessageCard
             bg={bgColor}
             cursor='pointer'
             _hover={{ boxShadow: 'md' }}
-            {...props}
+            maxW='400px'
         >
             <CardHeader>
                 <HStack>
