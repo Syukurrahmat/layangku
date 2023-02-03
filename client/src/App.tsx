@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Create from "./components/create"
 import Home from "./components/home"
 import MessageList from "./components/messageList"
+import NotFound from "./components/notFound"
 
 function App() {
     return (
@@ -18,7 +19,9 @@ function App() {
                         path: '/create',
                         element: <Create />
                     }
-                ]
+                ],
+                errorElement: <NotFound />
+
             }
         ])} />
     )
