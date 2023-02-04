@@ -1,20 +1,27 @@
 <div align='center'>
 
-# ![](https://user-images.githubusercontent.com/56708199/216733369-a5efe268-eac6-4272-9298-175400eabab4.svg)
+# [![](https://user-images.githubusercontent.com/56708199/216733369-a5efe268-eac6-4272-9298-175400eabab4.svg)](https://layangku.herokuapp.com/)
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
 
-**Temukan Pesan Untukmu Dari banyak Orang**
+ **Temukan Pesan Untukmu Dari banyak Orang**
 </div>
-Layangku merupakan website yang dapat menemukan pesan untukmu dari orang banyak hanya dengan menuliskan namamu saja. Kamu juga dapat menuliskan pesan untuk seseorang dengan menentukan nama penerima dan isi pesan.
-> Website menemukan pesan berdasarkan nama penerima, jadi bukan benar benar untuk kamu saja hehe.
+
+**Layangku** merupakan website yang dapat menemukan pesan untukmu dari orang banyak hanya dengan menuliskan namamu saja. Kamu juga dapat menuliskan pesan untuk seseorang dengan menentukan nama penerima dan isi pesan. Website menemukan pesan berdasarkan nama penerima, jadi bukan benar benar untuk kamu saja hehe.
 
 ## 🚀 Fitur 
 
+Fitur -fitur yang terdapata pada website ini adalah sebagai berikut 
+
+- Menemukan pesan dari orang lain dengan memasukkan nama
+- Membuat pesan baru untuk orang lain
+- Pesan dapat ditampilkan per pesan dan dapat di-_swipe_ sehingga memudahkan navigasi antar kartu 
+- Responsive
+
 ## 👩🏾‍💻 Teknologi yang digunakan
 
-Dalam repositori ini terdapat dua folder utama yakni folder `back-end`, yang memuat kode program untuk sisi _server_, dan folder `front-end`, yang memuat kode program untuk sisi _client_
+Dalam repositori ini terdapat dua folder utama yakni folder `server`, yang memuat kode program untuk sisi peladen (**back-end**), dan folder `client`, yang memuat kode program untuk sisi klien (**front-end**) 
 
 ### 🌐 Back end
 
@@ -23,8 +30,8 @@ Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 ![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=Express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-- Express js : merupakan framework back end, yang daya gunakan untuk mengatur fungsionalitas website, seperti routing, permintaan HTTP, penanganan error, serta pertukaran data dengan database.
-- MongoDB : merupakan salah satu jenis database NoSQL (Not Only SQL) yang menyimpan datanya dalam bentuk document dengan format JSON. Untuk mempermudah permintaan ke MongoDB saya menggunakan framework mongodb object modeling yakni Mongoose
+- Express js, sebagai framework back-end, saya gunakan untuk mengatur fungsionalitas website, seperti routing, permintaan HTTP, penanganan error, serta pertukaran data dengan database.
+- MongoDB, yang merupakan salah satu jenis database NoSQL (Not Only SQL), saya gunakan sebagai penyimpanan data pesan pesan yang dibuat oleh user. untuk mempermudah query ke MongoDB saya menggunakan framework mongodb object modeling yakni Mongoose
 - dan beberapa library lainnya
 
 
