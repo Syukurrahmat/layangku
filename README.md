@@ -3,7 +3,7 @@
 # [![](https://user-images.githubusercontent.com/56708199/216733369-a5efe268-eac6-4272-9298-175400eabab4.svg)](https://layangku.herokuapp.com/)
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
 
  **Temukan Pesan Untukmu Dari banyak Orang**
 </div>
