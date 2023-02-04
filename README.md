@@ -1,17 +1,22 @@
-# <img src="https://user-images.githubusercontent.com/56708199/216625493-91e51a80-68ea-4dc9-884b-bf11146166e8.png" width="220">
+<div align='center'>
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
+# ![](https://user-images.githubusercontent.com/56708199/216733369-a5efe268-eac6-4272-9298-175400eabab4.svg)
 
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)
+
+**Temukan Pesan Untukmu Dari banyak Orang**
+</div>
 Layangku merupakan website yang dapat menemukan pesan untukmu dari orang banyak hanya dengan menuliskan namamu saja. Kamu juga dapat menuliskan pesan untuk seseorang dengan menentukan nama penerima dan isi pesan.
 > Website menemukan pesan berdasarkan nama penerima, jadi bukan benar benar untuk kamu saja hehe.
 
-# 👩🏾‍💻 Teknologi yang digunakan
+## 🚀 Fitur 
+
+## 👩🏾‍💻 Teknologi yang digunakan
 
 Dalam repositori ini terdapat dua folder utama yakni folder `back-end`, yang memuat kode program untuk sisi _server_, dan folder `front-end`, yang memuat kode program untuk sisi _client_
 
-## 🌐 Back end
+### 🌐 Back end
 
 Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 
@@ -23,7 +28,7 @@ Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 - dan beberapa library lainnya
 
 
-## 💻 Front End
+### 💻 Front End
 
 Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 
@@ -31,22 +36,3 @@ Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Chakra UI](https://img.shields.io/badge/chakraui-2c7a7b?style=for-the-badge&logo=chakraui&logoColor=white)
 ![Typescript](https://img.shields.io/badge/SwiperJs-0080ff?style=for-the-badge&logo=swiper&logoColor=white)
-
-# 📸 Tangkapan Layar
-
-<figure>
-<img src="https://user-images.githubusercontent.com/56708199/216626909-82238320-1dc6-455c-bcc8-925e9504f163.png" width="600px" />
-<figcaption align = "center">Halaman beranda sekaligus halaman pencarian</figcaption>
-</figure>
-<figure>
-<img src="https://user-images.githubusercontent.com/56708199/216639882-466e66d6-f530-4426-a08b-a993d7a253a6.png" width="600px" />
-<figcaption align = "center">Halaman hasil pencarian pesan</figcaption>
-</figure>
-<figure>
-<img src="https://user-images.githubusercontent.com/56708199/216642050-b3a87cf6-a9bc-4583-a674-df6b0d223902.png" width="600px" />
-<figcaption align = "center">Menampilkan kartu pesan dari seseorang</figcaption>
-</figure>
-<figure>
-<img src="https://user-images.githubusercontent.com/56708199/216639894-242f2880-9c6b-41a8-a5fe-e766f1448ced.png" width="600px" />
-<figcaption align = "center">Halaman membuat pesan baru</figcaption>
-</figure>
