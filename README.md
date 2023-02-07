@@ -42,4 +42,11 @@ Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Chakra UI](https://img.shields.io/badge/chakraui-2c7a7b?style=for-the-badge&logo=chakraui&logoColor=white)
-![Typescript](https://img.shields.io/badge/SwiperJs-0080ff?style=for-the-badge&logo=swiper&logoColor=white)
+![Swiper JS](https://img.shields.io/badge/SwiperJs-0080ff?style=for-the-badge&logo=swiper&logoColor=white)
+
+- React js, untuk membangun antarmuka dari web ini saya menggunakan React Js, yang merupakan framework yang cocok digunakan dalam proses pengembangan aplikasi web dinamis.
+- Typescript, saya gunakan untuk mengatur dan menyeragamkan tipe data dari suatu variable pada file javascript, sehingga penulisan kode lebih konsisten dan meminimalisir kesalahan kode saat kode dijalankan.
+- Chakra UI, untuk membangun komponen antarmuka website lebih cepat dan tertata, saya menggunakan Chakra UI, yang merupakan toolkit komponen toolkit yang dibangun di atas React
+- Swiper JS, yang merupakan library javacript untuk membuat slider, saya gunakan dalam antarmuka untuk mempermudah menavigasikan kartu Pesan satu ke kartu pesan yang lainnya dengan hanya mengusap/_swipe_ -nya
+
+## 🖥️ Tampilan Website
