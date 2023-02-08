@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-import { CARD_COLORS } from '../../config'
+import { CARD_COLORS } from '../../../config'
 
 const createFormSchema = Yup.object().shape({
     isAnonim: Yup.boolean(),

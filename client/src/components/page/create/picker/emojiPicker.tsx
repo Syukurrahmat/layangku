@@ -1,5 +1,5 @@
 import { Box, Button, Center, Popover, PopoverTrigger, PopoverContent, PopoverHeader, PopoverBody, PopoverArrow, PopoverCloseButton, SimpleGrid, useRadio, useRadioGroup, useStyleConfig, } from "@chakra-ui/react"
-import { EMOJIES_LIST } from "../../../config"
+import { EMOJIES_LIST } from "../../../../config"
 
 
 export default function MyEmojiPicker({ name, defaultValue, onChange }: IMyCustomPicker) {

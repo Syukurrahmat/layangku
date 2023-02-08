@@ -1,0 +1,54 @@
+
+.card-slider-enter .my-card {
+    opacity: 0;
+    transform: translateY(25px);
+}
+
+.card-slider-enter-active .my-card {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.card-slider-exit .my-card {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card-slider-exit-active .my-card {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 100ms, transform 100ms;
+}
+
+.card-slider-enter .overlay {
+    opacity: 0;
+}
+
+.card-slider-enter-active .overlay {
+    opacity: 1;
+    transition: opacity 100ms;
+}
+
+.card-slider-exit .overlay {
+    opacity: 1;
+}
+
+.card-slider-exit-active .overlay {
+    opacity: 0;
+    transition: opacity 100ms;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 80% !important;
+        transform: scale(0.7);
+    }
+}

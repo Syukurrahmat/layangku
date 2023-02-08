@@ -4,10 +4,11 @@ import { Navigation, Keyboard } from "swiper"
 import { CSSTransition } from 'react-transition-group'
 import { HTMLAttributes } from 'react'
 
-import MessageCard, { MessageCardLoadMore } from '../messageCard/messageCard'
+import MessageCard, { MessageCardLoadMore } from './messageCard'
 
 import "swiper/css/navigation"
 import 'swiper/css'
+import '../../styles/cardSlider.css'
 
 interface ICardSlider extends HTMLAttributes<HTMLElement> {
     datas: Message[]
@@ -35,8 +36,9 @@ export default function CardSlider({ datas, isOpen, onClose, initialSlide, isNot
                     pos='fixed' top='0' left='0'
                     onClick={event => {
                         const target = event.target as Element
-                        if (target.classList.contains('swiper-slide'))
+                        if (target.classList.contains('swiper-slide')){
                             onClose()
+                        }
                     } }
                 >
                     <Swiper
@@ -58,7 +60,8 @@ export default function CardSlider({ datas, isOpen, onClose, initialSlide, isNot
                             <SwiperSlide style={{ padding: '10px' }}>
                                 <MessageCardLoadMore
                                     loadMoreHandler={loadMoreHandler}
-                                    onClose={onClose} />
+                                    onClose={onClose}
+                                />
                             </SwiperSlide>}
                     </Swiper>
                 </Box>

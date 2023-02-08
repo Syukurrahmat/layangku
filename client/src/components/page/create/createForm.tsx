@@ -1,10 +1,10 @@
 import { Center, Circle, FormControl, FormErrorMessage, FormLabel, HStack, Input, Spinner, Switch, Text, Textarea } from "@chakra-ui/react"
 import { IconCheck, IconX, TablerIcon } from "@tabler/icons"
+import { Field, useFormikContext } from "formik"
 
 import ColorPicker from "./picker/colorPicker"
-import SmallMessageCard from "../messageCard/smallMessageCard"
+import SmallMessageCard from "../../core/smallMessageCard"
 import MyEmojiPicker from "./picker/emojiPicker"
-import { Field, useFormikContext } from "formik"
 
 
 interface ICreateForm {

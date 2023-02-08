@@ -1,12 +1,14 @@
 import { useDisclosure, Button, Container, Divider, Center, SimpleGrid, Text, Image } from "@chakra-ui/react"
 import { useRef, useEffect, useState } from "react"
-import { useParams } from "react-router"
-import { Data } from "../../services/data"
-import CardSlider from '../cardSlider'
-import HeadingWithIcon from "../headingWithIcon"
-import SmallMessageCard from "../messageCard/smallMessageCard"
 
-import noMessagesImage from '../../image/no-messages.png'
+import { useParams } from "react-router"
+
+import { Data } from "../services/data"
+import CardSlider from "../components/core/cardSlider"
+import HeadingWithIcon from "../components/core/headingWithIcon"
+import SmallMessageCard from "../components/core/smallMessageCard"
+
+import noMessagesImage from '../image/no-messages.png'
 
 type MessageListData = {
     receiver: string,
@@ -86,7 +88,10 @@ export default function MessageList() {
                         <SmallMessageCard
                             key={i}
                             data={data}
-                            onClick={() => openCardSlider(i)}
+                            onClick={() => {
+                                openCardSlider(i)
+                                console.log('djdjdjd')
+                            }}
                         />
                     ))}
                 </SimpleGrid>

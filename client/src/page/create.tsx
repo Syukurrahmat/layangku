@@ -3,14 +3,16 @@ import { CSSTransition, SwitchTransition } from "react-transition-group"
 import { useRef, useEffect, useState } from "react"
 import { Formik, FormikProps } from "formik"
 
-import HeadingWithIcon from "../headingWithIcon"
-import CreateForm from "./createForm"
-import createFormSchema from "./createFormSchema"
 
-import { CARD_COLORS, EMOJIES_LIST } from "../../config"
-import { getRandomItem } from "../../utils"
-import { Data } from "../../services/data"
+import CreateForm from "../components/page/create/createForm"
+import createFormSchema from "../components/page/create/createFormSchema"
+import HeadingWithIcon from "../components/core/headingWithIcon"
 
+import { CARD_COLORS, EMOJIES_LIST } from "../config"
+import { getRandomItem } from "../utils"
+import { Data } from "../services/data"
+
+import '../styles/switchCreatePageTransition.css'
 
 const Create = () => {
     const [page, setPage] = useState(1)

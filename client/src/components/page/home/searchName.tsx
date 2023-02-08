@@ -9,7 +9,7 @@ const SearchName = () => {
     const navigate = useNavigate()
 
     return (
-        <Box color='initial' bg='white' rounded='base' p='4' mt='8'>
+        <Box bg='white' rounded='base' p='4' mt='8'>
             <Text fontSize='sm' children={'Tulis namamu tuk temukan pesan'} />
             <InputGroup
                 as='form'

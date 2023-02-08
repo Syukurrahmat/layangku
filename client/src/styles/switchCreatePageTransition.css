@@ -1,0 +1,49 @@
+.switch-previous-enter {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.switch-previous-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.switch-previous-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.switch-previous-exit-active {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.switch-previous-enter-active,
+.switch-previous-exit-active {
+    transition: opacity 300ms, transform 300ms;
+}
+
+.switch-next-enter {
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.switch-next-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.switch-next-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.switch-next-exit-active {
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.switch-next-enter-active,
+.switch-next-exit-active {
+    transition: opacity 300ms, transform 300ms;
+}

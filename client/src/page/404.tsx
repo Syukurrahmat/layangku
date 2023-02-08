@@ -1,6 +1,6 @@
 import { Center, Container, Image, Text, Link as ChakraLink, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import notFoundImg from '../../image/not-found.png'
+import notFoundImg from '../image/not-found.png'
 
 export default function NotFound () {
     return (

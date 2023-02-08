@@ -1,7 +1,8 @@
 import { Box, Center, Flex, useRadio, useRadioGroup } from "@chakra-ui/react"
 import { IconCheck } from "@tabler/icons"
-import { CARD_COLORS } from "../../../config"
-import { colorCardLib } from "../../../utils"
+
+import { CARD_COLORS } from "../../../../config"
+import { colorCardLib } from "../../../../utils"
 
 
 export default function ColorPicker({ name, defaultValue, onChange }: IMyCustomPicker) {

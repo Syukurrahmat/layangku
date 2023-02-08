@@ -1,30 +1,27 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import Create from "./components/create"
-import Home from "./components/home"
-import MessageList from "./components/messageList"
-import NotFound from "./components/notFound"
+import Create from "./page/create"
+import Home from "./page/home"
+import MessageList from "./page/messages"
+import NotFound from "./page/404"
 
-function App() {
-    return (
-        <RouterProvider router={createBrowserRouter([
-            {
-                path: '/',
-                element: <Home />,
-                children: [
-                    {
-                        path: '/messages/:receiver',
-                        element: <MessageList />
-                    },
-                    {
-                        path: '/create',
-                        element: <Create />
-                    }
-                ],
-                errorElement: <NotFound />
-
-            }
-        ])} />
-    )
-}
+const App = () => (
+    <RouterProvider router={createBrowserRouter([
+        {
+            path: '/',
+            element: <Home />,
+            children: [
+                {
+                    path: '/messages/:receiver',
+                    element: <MessageList />
+                },
+                {
+                    path: '/create',
+                    element: <Create />
+                }
+            ],
+            errorElement: <NotFound />
+        }
+    ])} />
+)
 
 export default App

@@ -2,12 +2,12 @@ import { CardProps, Center, Divider, Heading, HStack, Skeleton, SkeletonText, Te
 import { colorCardLib } from '../../utils'
 import { Card, CardHeader, CardBody } from '@chakra-ui/react'
 
-interface ISmallMessageCard extends CardProps  {
-    data : Message | MessageForm
+interface ISmallMessageCard extends CardProps {
+    data: Message | MessageForm
 }
 
-export default function SmallMessageCard({ data  } : ISmallMessageCard) {
-    if (!data) return <SmallMessageCardSkeleton/>
+export default function SmallMessageCard({ data ,...props }: ISmallMessageCard) {
+    if (!data) return <SmallMessageCardSkeleton />
 
     const { title, message, emoji, color } = data || {}
     const { bgColor, emojiBgColor } = colorCardLib(color)
@@ -17,8 +17,13 @@ export default function SmallMessageCard({ data  } : ISmallMessageCard) {
             size='sm'
             bg={bgColor}
             cursor='pointer'
-            _hover={{ boxShadow: 'md' }}
             maxW='400px'
+            transition='all 150ms'
+            _hover={{
+                boxShadow: 'lg' ,
+                transform : 'translateY(-4px)'
+            }}
+            {...props}
         >
             <CardHeader>
                 <HStack>
