@@ -51,3 +51,11 @@ Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 - Swiper JS, yang merupakan library javacript untuk membuat slider, saya gunakan dalam antarmuka untuk mempermudah menavigasikan kartu Pesan satu ke kartu pesan yang lainnya dengan hanya mengusap/_swipe_ -nya
 
 ## 🖥️ Tampilan Website
+
+https://user-images.githubusercontent.com/56708199/217602629-31ee9a2d-da62-4d42-a22a-55cbbc58f804.mp4
+
+
+
+
+
+
