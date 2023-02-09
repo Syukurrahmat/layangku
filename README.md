@@ -50,13 +50,8 @@ Adapun teknologi yang digunakan untuk sisi _server_ adalah sebagai berikut
 - Typescript, saya gunakan untuk mengatur dan menyeragamkan tipe data dari suatu variable pada file javascript, sehingga penulisan kode lebih konsisten dan meminimalisir kesalahan kode saat kode dijalankan.
 - Chakra UI, untuk membangun komponen antarmuka website lebih cepat dan tertata, saya menggunakan Chakra UI, yang merupakan toolkit komponen toolkit yang dibangun di atas React
 - Swiper JS, yang merupakan library javacript untuk membuat slider, saya gunakan dalam antarmuka untuk mempermudah menavigasikan kartu Pesan satu ke kartu pesan yang lainnya dengan hanya mengusap/_swipe_ -nya
+- dan beberapa library lainnya
 
 ## 🖥️ Website Video Snapshot
 
 https://user-images.githubusercontent.com/56708199/217604462-32edb999-144b-4fd2-a375-c47e8c1cfdc0.mp4
-
-[![visit-this-website](https://user-images.githubusercontent.com/56708199/217606515-3c64c100-8e05-4c01-8b1d-fdeae9374f9a.svg)](https://layangku.herokuapp.com/)
-
-
-
-
