@@ -11,12 +11,12 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json())
-app.use(express.static('public'))
+// app.use(express.static('public'))
 app.use(cors())
 mongoDBPinkCron.start()
 
-app.use('/api', api)
+app.use(api)
 
-app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')))
+// app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')))
 
 app.listen(process.env.PORT || 5000, () => console.log('server aktif'))
