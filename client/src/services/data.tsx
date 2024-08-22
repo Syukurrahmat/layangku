@@ -1,4 +1,4 @@
-const APIURL = '/api'
+const APIURL = 'https://api-layangku.vercel.app'
 
 export const Data = {
     async getMessageList(receiver: string, page = 1) {
