@@ -4,7 +4,7 @@
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
-[![visit-this-website](https://user-images.githubusercontent.com/56708199/217606515-3c64c100-8e05-4c01-8b1d-fdeae9374f9a.svg)](https://layangku.herokuapp.com/)
+[![visit-this-website](https://user-images.githubusercontent.com/56708199/217606515-3c64c100-8e05-4c01-8b1d-fdeae9374f9a.svg)](https://layangku-app.vercel.app/)
 
  **Temukan Pesan Untukmu Dari banyak Orang**
 </div>
