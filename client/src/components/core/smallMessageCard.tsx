@@ -17,7 +17,6 @@ export default function SmallMessageCard({ data ,...props }: ISmallMessageCard) 
             size='sm'
             bg={bgColor}
             cursor='pointer'
-            maxW='400px'
             transition='all 150ms'
             _hover={{
                 boxShadow: 'lg' ,
